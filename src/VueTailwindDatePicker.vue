@@ -1477,7 +1477,7 @@ provide(setToCustomShortcutKey, setToCustomShortcut)
             <div
               class="vtd-datepicker static sm:relative w-full bg-white sm:rounded-lg sm:shadow-sm border-0 sm:border border-black/[.1] px-3 py-3 sm:px-4 sm:py-4"
               :class="getAbsoluteClass(open)">
-              <div class="flex flex-wrap lg:flex-nowrap">
+              <div class="flex flex-wrap lg:flex-nowrap flex-row-reverse">
                 <VtdShortcut v-if="props.shortcuts" :shortcuts="props.shortcuts" :as-range="asRange()"
                   :as-single="props.asSingle" :i18n="props.options.shortcuts" :close="close" />
                 <div class="relative flex flex-wrap sm:flex-nowrap p-1 w-full">
@@ -1553,7 +1553,7 @@ provide(setToCustomShortcutKey, setToCustomShortcut)
   <div v-else-if="displayDatepicker" class="flex">
     <div
       class="bg-white rounded-lg shadow-sm border border-black/[.1] px-3 py-3 sm:px-4 sm:py-4">
-      <div class="flex flex-wrap lg:flex-nowrap">
+      <div class="flex flex-wrap lg:flex-nowrap flex-row-reverse">
         <VtdShortcut v-if="props.shortcuts" :shortcuts="props.shortcuts" :as-range="asRange()" :as-single="props.asSingle"
           :i18n="props.options.shortcuts" />
         <div class="relative flex flex-wrap sm:flex-nowrap p-1 w-full">
