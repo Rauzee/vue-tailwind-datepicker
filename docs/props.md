@@ -98,7 +98,7 @@ You can apply apply your own input classes using Tailwind CSS.
 
 <DemoLayout>
   <VueTailwindDatePicker
-    input-classes="text-sm bg-red-100 border-red-200 rounded-xs text-slate-800 font-medium dark:bg-red-800 dark:text-slate-800 border border-solid dark:border-red-200"
+    input-classes="text-sm bg-red-100 border-red-200 rounded-xs text-slate-800 font-medium border border-solid"
     v-model="dateValue15"
   ></VueTailwindDatePicker>
 </DemoLayout>
@@ -113,7 +113,7 @@ const dateValue = ref([])
 <template>
   <vue-tailwind-datepicker
     v-model="dateValue"
-    input-classes="block mb-2 text-sm font-medium text-green-700 dark:text-green-500"
+    input-classes="block mb-2 text-sm font-medium text-green-700"
   />
 </template>
 ```

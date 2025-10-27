@@ -11,7 +11,7 @@ defineProps<{
     <div
       v-for="(day, keyDay) in weeks"
       :key="keyDay"
-      class="text-vtd-secondary-500 text-xs 2xl:text-sm tracking-wide font-medium text-center cursor-default dark:text-vtd-secondary-400"
+      class="text-vtd-secondary-500 text-xs 2xl:text-sm tracking-wide font-medium text-center cursor-default"
     >
       <span v-text="day" />
     </div>

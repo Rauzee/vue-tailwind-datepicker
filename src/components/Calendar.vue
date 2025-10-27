@@ -46,8 +46,8 @@ const atMouseOver = injectStrict(atMouseOverKey)
       leave-to-class="opacity-0"
     >
       <template v-for="(date, keyDate) in calendar.date()" :key="keyDate">
-        <div v-if="keyDate % 7 === 0 && weekNumber" class="col-span-7 border-b relative dark:border-vtd-secondary-600">
-          <span class="absolute -left-2 top-1/2 -translate-y-2/4 bg-white dark:bg-vtd-secondary-800 text-[8px] pr-2 text-vtd-secondary-400">{{ date.week() }}</span>
+        <div v-if="keyDate % 7 === 0 && weekNumber" class="col-span-7 border-b relative">
+          <span class="absolute -left-2 top-1/2 -translate-y-2/4 bg-white text-[8px] pr-2 text-vtd-secondary-400">{{ date.week() }}</span>
         </div>
         <div class="relative" :class="{ 'vtd-tooltip': asRange && date.duration() }" :data-tooltip="`${date.duration()}`">
           <transition
@@ -58,7 +58,7 @@ const atMouseOver = injectStrict(atMouseOverKey)
           >
             <span
               v-if="isBetweenRange(date) || date.hovered()"
-              class="absolute bg-vtd-primary-100 bg-opacity-60 dark:bg-vtd-secondary-700/50"
+              class="absolute bg-vtd-primary-100 bg-opacity-60/50"
               :class="betweenRangeClasses(date)"
             />
           </transition>
