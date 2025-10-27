@@ -1475,7 +1475,7 @@ provide(setToCustomShortcutKey, setToCustomShortcut)
           <div ref="VtdRef"
             class="fixed inset-0 z-50 overflow-y-auto sm:overflow-visible sm:static sm:z-auto bg-white sm:rounded-lg shadow-sm">
             <div
-              class="vtd-datepicker static sm:relative w-full bg-white sm:rounded-lg sm:shadow-sm border-0 sm:border border-black/[.1] px-3 py-3 sm:px-4 sm:py-4/[1]"
+              class="vtd-datepicker static sm:relative w-full bg-white sm:rounded-lg sm:shadow-sm border-0 sm:border border-black/[.1] px-3 py-3 sm:px-4 sm:py-4"
               :class="getAbsoluteClass(open)">
               <div class="flex flex-wrap lg:flex-nowrap">
                 <VtdShortcut v-if="props.shortcuts" :shortcuts="props.shortcuts" :as-range="asRange()"
@@ -1483,7 +1483,7 @@ provide(setToCustomShortcutKey, setToCustomShortcut)
                 <div class="relative flex flex-wrap sm:flex-nowrap p-1 w-full">
                   <div v-if="asRange() && !props.asSingle"
                     class="hidden h-full absolute inset-0 sm:flex justify-center items-center">
-                    <div class="h-full border-r border-black/[.1] /[1]" />
+                    <div class="h-full border-r border-black/[.1]" />
                   </div>
                   <div class="relative" :class="{
                     'mb-3 sm:mb-0 sm:mr-2 w-full md:w-1/2 lg:w-80':
@@ -1521,7 +1521,7 @@ provide(setToCustomShortcutKey, setToCustomShortcut)
                 </div>
               </div>
               <div v-if="!props.autoApply">
-                <div class="mt-2 mx-2 py-1.5 border-t border-black/[.1] /[1]">
+                <div class="mt-2 mx-2 py-1.5 border-t border-black/[.1]">
                   <div class="mt-1.5 sm:flex sm:flex-row-reverse">
                     <button type="button"
                       class="away-apply-picker w-full transition ease-out duration-300 inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-vtd-primary-600 text-base font-medium text-white hover:bg-vtd-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-vtd-primary-500 sm:ml-3 sm:w-auto sm:text-sm disabled:cursor-not-allowed"
@@ -1536,7 +1536,7 @@ provide(setToCustomShortcutKey, setToCustomShortcut)
                 </div>
               </div>
               <div v-else class="sm:hidden">
-                <div class="mt-2 mx-2 py-1.5 border-t border-black/[.1] /[1]">
+                <div class="mt-2 mx-2 py-1.5 border-t border-black/[.1]">
                   <div class="mt-1.5 sm:flex sm:flex-row-reverse">
                     <button type="button"
                       class="away-cancel-picker w-full transition ease-out duration-300 inline-flex justify-center rounded-md border border-vtd-secondary-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-vtd-secondary-700 hover:bg-vtd-secondary-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-vtd-primary-500 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm"
@@ -1552,14 +1552,14 @@ provide(setToCustomShortcutKey, setToCustomShortcut)
   </Popover>
   <div v-else-if="displayDatepicker" class="flex">
     <div
-      class="bg-white rounded-lg shadow-sm border border-black/[.1] px-3 py-3 sm:px-4 sm:py-4/[1]">
+      class="bg-white rounded-lg shadow-sm border border-black/[.1] px-3 py-3 sm:px-4 sm:py-4">
       <div class="flex flex-wrap lg:flex-nowrap">
         <VtdShortcut v-if="props.shortcuts" :shortcuts="props.shortcuts" :as-range="asRange()" :as-single="props.asSingle"
           :i18n="props.options.shortcuts" />
         <div class="relative flex flex-wrap sm:flex-nowrap p-1 w-full">
           <div v-if="asRange() && !props.asSingle"
             class="hidden h-full absolute inset-0 sm:flex justify-center items-center">
-            <div class="h-full border-r border-black/[.1] /[1]" />
+            <div class="h-full border-r border-black/[.1]" />
           </div>
           <div class="relative w-full lg:w-80" :class="{
             'mb-3 sm:mb-0 sm:mr-2 md:w-1/2': asRange() && !props.asSingle,
@@ -1594,7 +1594,7 @@ provide(setToCustomShortcutKey, setToCustomShortcut)
         </div>
       </div>
       <div v-if="!props.autoApply">
-        <div class="mt-2 mx-2 py-1.5 border-t border-black/[.1] /[1]">
+        <div class="mt-2 mx-2 py-1.5 border-t border-black/[.1]">
           <div class="mt-1.5 sm:flex sm:flex-row-reverse">
             <button type="button"
               class="away-apply-picker w-full transition ease-out duration-300 inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-vtd-primary-600 text-base font-medium text-white hover:bg-vtd-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-vtd-primary-500 sm:ml-3 sm:w-auto sm:text-sm disabled:cursor-not-allowed"
